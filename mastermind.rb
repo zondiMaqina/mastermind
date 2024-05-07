@@ -1,14 +1,37 @@
 # module for player to use to crack code made by computor or visa versa
-module CrackCode
-    def self.rules
+class CrackCode
+    def initialize
         puts "WELCOME TO THE ``MASTERMIND`` :)"
-        print "\nThe rules are simple:\nYou must CRACK a 4-digit code created from integers [1 - 6] or CREATE the 4-digit code from those 6 digits [1 - 6] and play against the computor to crack YOUR code\nYou have 12 tries before the game ends and if you or the computor manages to crack the code created by you or the computor in less than 12 tries you win\n"
+        print "\nThe rules are simple:\nYou must CRACK a 4-digit code created from integers [1 - 6] by the computoe or CREATE the code and play against the computor to crack YOUR code\nYou have 12 tries before the game ends and if you or the computor manages to crack the code in less than 12 tries that player wins\n"
     
-        puts "\nEach time you will get feedback on your guess\n(W) => means your code has two correct digits but in the wrong position\n(B) => means you have the right digit at the right position"
+        puts "\nEach time you will get feedback on your guess\n(W) => means your code has a correct digit but in the wrong position\n(B) => means you have the right digit at the right position"
+        choose_position
     end
 
+    private
+
     def choose_position
-      puts "To be the code Cracker Enter 'create'\nTo be the code creator Enter 'crack'"
+      puts "\nTo be the code Cracker Enter 'create'\nTo be the code creator Enter 'crack'"
+      user_input = gets.chomp  
+
+      until user_input == 'create' || user_input == 'crack'
+        puts "Please choose 'create' or 'crack' to choose position"
+        user_input = gets.chomp  
+      end
+
+      if user_input == 'create'
+        create_code
+      elsif user_input == 'crack'
+        crack_code
+      end
+    end
+
+    def crack_code
+      puts "crack code"
+    end
+
+    def create_code
+      puts "create the 4-digit code"
     end
 end
 
@@ -26,4 +49,4 @@ class Player
   end
 end
 
-CrackCode.rules
+CrackCode.new
