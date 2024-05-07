@@ -39,7 +39,6 @@ print arr # => ["hello", "hy"] returns array of non-whitespace elements
 - If each element has whitespace that is not needed you can use the `gsub(" ", "")` method with arguments to replace
 
 2. => To get a random element from an array you use the `sample` method which returns a single random element from the array
-
 ```
 numbers = [1, 2, 3, 4, 5]
 random_number = numbers.sample
@@ -47,7 +46,7 @@ random_number = numbers.sample
 print random_number # => returns random number
 ```
 
-- [x] To store more than one you can use a loop with another empty array
+- [x] To store **more than one** you can use a *loop* with another *empty array*
 ```
 numbers = [1, 2, 3, 4, 5]
 choices = Array.new
