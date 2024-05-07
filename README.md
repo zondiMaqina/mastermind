@@ -8,10 +8,10 @@
 2. BE THE **CREATOR** create it...
 
 # Contents
-[Aim of project](#aim-of-project)
-[Structure of Project](#structure-of-project)
-[Challenges and Solutions](#challenges-and-solutions)
-[Development](#development)
+1. [Aim of project](#aim-of-project)
+2. [Structure of Project](#structure-of-project)
+3. [Challenges and Solutions](#challenges-and-solutions)
+4. [Development](#development)
 
 ## Aim of project
 
