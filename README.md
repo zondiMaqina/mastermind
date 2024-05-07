@@ -21,7 +21,7 @@
 > Thisis not the original version of the Mastermind game, here instead of guessing or creating color choices you must either guess an integer-based code of 4 digits  or create it and play against the computor to see the original rules for mastermind check [here](https://en.wikipedia.org/wiki/Mastermind_(board_game))
 
 
-This game will have two *options* where:
+### This game will have two *options* where:
 
 - YOU create the code
 - You must crack the code
@@ -34,6 +34,7 @@ This game will have two *options* where:
 The _Classes_ will inherit from one module (CrackCode)
 
 ## Challenges and Solutions
+
 
 ## Development
 
