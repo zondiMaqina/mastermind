@@ -47,7 +47,7 @@ class CrackCode
                 break
             elsif user_code.length != 4 || user_code.split(" ").all?{|num| num.to_i == 0}
                 puts "#{@@tries} tries left"
-                puts 'Four digits bruh'
+                puts 'FOUR DIGITS ONLY BRUH'
                 user_code = gets.chomp
             elsif user_code == @@computor_code.join("")
                 puts "#{@@tries} tries left"
