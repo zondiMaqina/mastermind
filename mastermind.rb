@@ -39,14 +39,26 @@ class CrackCode
       user_code = gets.chomp
       user_code = user_code.gsub(" ", "")
 
-      if user_code.length != 4 || user_code.to_i == 0
-        until user_code.length == 4
-          puts 'Four digits bruh'
-          user_code = gets.chomp
+        while @@tries > 0
+            @@tries -= 1
+
+            if @@tries <= 0
+                puts "You lose the game boo boo"
+                break
+            elsif user_code.length != 4 || user_code.split(" ").all?{|num| num.to_i == 0}
+                puts "#{@@tries}"
+                puts 'Four digits bruh'
+                user_code = gets.chomp
+            elsif user_code == @@computor_code.join("")
+                puts "#{@@tries}"
+                puts "YOU WIN BROTHER"
+                break
+            else
+                puts "#{@@tries}"
+                puts "try again"
+                user_code = gets.chomp
+            end
         end
-      else
-        puts 'stage 1 complete'
-      end
     end
 
     def create_code
