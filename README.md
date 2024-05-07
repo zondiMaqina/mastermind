@@ -26,6 +26,13 @@ This game will have two *options* where:
 - YOU create the code
 - You must crack the code
 
+--------------------------------------------------------------------
+2 Classes
+1. => For computor to crack the code (Computor)
+2. => For you to crack the code (Player)
+
+The _Classes_ will inherit from one module (CrackCode)
+
 ## Challenges and Solutions
 
 ## Development
