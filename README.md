@@ -80,3 +80,5 @@ end
 
 print choices
 ```
+
+- You cannot call private or any other method with class methods
