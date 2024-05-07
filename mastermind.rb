@@ -1,5 +1,8 @@
 # module for player to use to crack code made by computor or visa versa
 class CrackCode
+    @@digits = [1, 2, 3, 4, 5, 6, 7, 8]
+    @@tries = 12
+    @@computor_code = []
     def initialize
         puts "WELCOME TO THE ``MASTERMIND`` :)"
         print "\nThe rules are simple:\nYou must CRACK a 4-digit code created from integers [1 - 6] by the computoe or CREATE the code and play against the computor to crack YOUR code\nYou have 12 tries before the game ends and if you or the computor manages to crack the code in less than 12 tries that player wins\n"
@@ -27,7 +30,12 @@ class CrackCode
     end
 
     def crack_code
-      puts "crack code"
+        4.times do 
+          random_number = @@digits.sample
+          @@computor_code.push(random_number)
+        end
+
+      puts "crack code the code created by the computor"
     end
 
     def create_code
