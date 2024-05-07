@@ -7,13 +7,13 @@
 *OR*
 2. BE THE **CREATOR** create it...
 
-# Aim of project
+## Aim of project
 
-# Structure of Project
+## Structure of Project
 
-# Challenges and Solutions
+## Challenges and Solutions
 
-# Development
+## Development
 
 1. How to rearrang elemnts in an array in a random way ?
 2. How to remove whitspace in an array ?
