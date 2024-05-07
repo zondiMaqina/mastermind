@@ -27,4 +27,14 @@ numbers_shuf = numbers.shuffle # store in var
 print numbers_shuf => [1, 4, 2, 5, 3] # random order of elements
 ```
 
-2. => 
+2. => To remove elements of whitespace in an array you use the `reject()` method that removess any element that meets its condition from an array (it does not mutate the caller)
+
+```
+arr = ["hello", " ", "hy"]
+arr = arr.reject {|el| el.strip.empty?}
+
+print arr # =>  ["hello", "hy"] # returns array of non-whitespace elements
+```
+- The `reject` method works with boolean values 
+- If each element has whitespace that is not needed you can use the `gsub(" ", "")` method with arguments to replace
+
