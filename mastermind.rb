@@ -34,8 +34,19 @@ class CrackCode
           random_number = @@digits.sample
           @@computor_code.push(random_number)
         end
+        print "#{@@computor_code}\n"
+      puts "crack the code created by the computor"
+      user_code = gets.chomp
+      user_code = user_code.gsub(" ", "")
 
-      puts "crack code the code created by the computor"
+      if user_code.length != 4 || user_code.to_i == 0
+        until user_code.length == 4
+          puts 'Four digits bruh'
+          user_code = gets.chomp
+        end
+      else
+        puts 'stage 1 complete'
+      end
     end
 
     def create_code
