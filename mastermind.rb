@@ -46,15 +46,15 @@ class CrackCode
                 puts "You lose the game boo boo"
                 break
             elsif user_code.length != 4 || user_code.split(" ").all?{|num| num.to_i == 0}
-                puts "#{@@tries}"
+                puts "#{@@tries} tries left"
                 puts 'Four digits bruh'
                 user_code = gets.chomp
             elsif user_code == @@computor_code.join("")
-                puts "#{@@tries}"
+                puts "#{@@tries} tries left"
                 puts "YOU WIN BROTHER"
                 break
             else
-                puts "#{@@tries}"
+                puts "#{@@tries} tries left"
                 puts "try again"
                 user_code = gets.chomp
             end
