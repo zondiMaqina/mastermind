@@ -7,9 +7,24 @@
 *OR*
 2. BE THE **CREATOR** create it...
 
+# Contents
+[Aim of project](#aim-of-project)
+[Structure of Project](#structure-of-project)
+[Challenges and Solutions](#challenges-and-solutions)
+[Development](#development)
+
 ## Aim of project
 
 ## Structure of Project
+
+> [!NOTE]
+> Thisis not the original version of the Mastermind game, here instead of guessing or creating color choices you must either guess an integer-based code of 4 digits  or create it and play against the computor to see the original rules for mastermind check [here](https://en.wikipedia.org/wiki/Mastermind_(board_game))
+
+
+This game will have two *options* where:
+
+- YOU create the code
+- You must crack the code
 
 ## Challenges and Solutions
 
