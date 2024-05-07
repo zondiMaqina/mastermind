@@ -74,7 +74,7 @@ class Computor
 end
 
 # Player to crack code or create it 
-class Player
+class Player < CrackCode
   def initialize
     
   end
